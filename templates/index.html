@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages Classification</title>
+</head>
+<body>
+   
+    <div class="container">
+        <!-- code here -->
+        <div class="card">
+            <div class="card-image">	
+                <h2 class="card-heading">
+                    Packages Classification
+                </h2>
+            </div>
+            <form class="card-form" action="{{ url_for('home')}}" method="POST">
+                <div class="input">
+                    <input name="January" type="number" step="any"  class="input-field" required/>
+                    <label  class="input-label"> January </label>
+                </div>
+                            <div class="input">
+                    <input name="February" type="number" step="any"  class="input-field" required/>
+                    <label  class="input-label">February</label>
+                </div>
+                            <div class="input">
+                    <input name="March" type="number" step="any"  class="input-field" required/>
+                    <label  class="input-label">March</label>
+                </div>
+                            <div class="input">
+                    <input name="April" type="number" step="any"  class="input-field" required/>
+                    <label  class="input-label">April</label>
+                </div>
+                            <div class="input">
+                  <input name="May" type="number" step="any"  class="input-field" required/>
+                  <label  class="input-label">May</label>
+                </div>
+                             <div class="input">
+                <input name="June" type="number" step="any"  class="input-field" required/>
+                <label  class="input-label">June</label>
+                </div>
+                              <div class="input">
+                    <input name="July" type="number" step="any"  class="input-field" required/>
+                    <label  class="input-label">July</label>
+                </div>
+                              <div class="input">
+                  <input name="August" type="number" step="any"  class="input-field" required/>
+                  <label  class="input-label">August</label>
+               </div>
+                               <div class="input">
+                <input name="September" type="number" step="any"  class="input-field" required/>
+                <label  class="input-label">September</label>
+                </div>
+                                 <div class="input">
+              <input name="October" type="number" step="any"  class="input-field" required/>
+              <label  class="input-label">October</label>
+              </div>
+                                 <div class="input">
+                <input name="November" type="number" step="any"  class="input-field" required/>
+                <label  class="input-label">November</label>
+              </div>
+                                 <div class="input">
+          <input name="December" type="number" step="any"  class="input-field" required/>
+          <label  class="input-label">December</label>
+              </div>
+                                 <div class="input">
+              <input name="Kind" type="number" step="any"  class="input-field" required/>
+              <label  class="input-label">Kind</label>
+              </div>
+                <div class="action">
+                    <button type="submit" class="action-button">Submit</button>
+                </div>
+            </form>
+
+            <center>  <p style="color: darkred; font-weight: bold;">{{ prediction }}</p>
+		        
+            </center>
+        </div>
+    </div>
+    
+</body>
+</html>
